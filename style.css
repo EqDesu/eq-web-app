@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 3px 0;
+}
+
+select, input[type="number"] {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 5px 0;
+}
+
+button {
+    padding: 8px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+td {
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+#total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #28a745;
+}
+
+#transactionHistory {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 15px;
+    margin: 0;
+}
+
+li {
+    margin: 3px 0;
+    font-size: 14px;
+}

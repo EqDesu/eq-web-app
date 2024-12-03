@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>halaman Kasirn:v</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TRANSAKSI KASIR</h1>
+
+    <label for="buyerName">Pilih Pembeli:</label>
+    <select id="buyerName">
+        <option value="">--Pilih Pembeli--</option>
+    </select>
+    <button onclick="addBuyer()">Tambah Pembeli</button> <button onclick="removeBuyer()">Hapus Pembeli</button>
+
+    <label for="itemName">Pilih Barang:</label>
+    <select id="itemName">
+        <option value="">--Pilih Barang--</option>
+    </select>
+
+    <label for="itemQuantity">Jumlah:</label>
+    <input type="number" id="itemQuantity" min="1" />
+
+    <button onclick="addToCart()">Tambah ke Pembelian</button>
+    
+    <h3>PEMBELIAN</h3>
+    <table id="cartItems">
+        <tr>
+            <th>Nama Barang</th>
+            <th>Harga</th>
+            <th>Jumlah</th>
+            <th>Total</th>
+            <th>Aksi</th>
+        </tr>
+    </table>
+
+    <h3>Total Pembayaran: Rp <span id="total">0</span></h3>
+    <button onclick="checkout()">Bayar</button>
+
+    <h3>Riwayat Transaksi:</h3>
+    <ul id="transactionHistory"></ul>
+
+    <button onclick="window.location.href='manage-items.html'">Kelola Barang</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

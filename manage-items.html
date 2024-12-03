@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eqspekjss</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>BARANG DAN HARGA</h1>
+    <a href="index.html">Kembali ke Kasir</a>
+    
+    <h3>Tambah Barang Baru</h3>
+    <tr> <label for="newItemName">Nama Barang:</label>
+    <input type="text" id="newItemName" placeholder="Nama barang" />
+    </tr>
+    <tr>
+    <label for="newItemPrice">Harga Barang:</label>
+    <input type="number" id="newItemPrice" placeholder="Harga barang" />
+    </tr>
+    <button onclick="addNewItem()">Tambah Barang</button>
+
+    <h3>Daftar Barang</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama Barang</th>
+                <th>Harga</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="itemList"></tbody>
+    </table>
+
+    <script src="manage-items.js"></script>
+</body>
+</html>
